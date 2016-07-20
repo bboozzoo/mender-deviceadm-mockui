@@ -93,7 +93,7 @@
                  $http.put(devurl, {"status": status})
                       .then(function(response) {
                           console.log("success, response status " + response.status);
-                          if (response.status == 200) {
+                          if (response.status == 200 || response.status == 204) {
                               /* all good */
                               updateDevStatus(devid);
                               /* updateDevices();*/
